@@ -387,7 +387,7 @@ class FancyCacheMiddleware(
             # We can likely solve this by simply removing this line,
             # but will need to make sure that the library still works for
             # older versions of Django that use this `self.cache =` method.
-            self.cache = caches[self.cache_alias]
+            # self.cache = caches[self.cache_alias]
         except KeyError:
             pass
 
